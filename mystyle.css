@@ -1,0 +1,29 @@
+p {
+    color: greenyellow;
+}
+body{
+    min-height: 100%;
+    background-color:background: #FD1B8A;
+    background: -moz-radial-gradient(center, #FD1B8A 0%, #6090FF 100%);
+    background: -webkit-radial-gradient(center, #FD1B8A 0%, #6090FF 100%);
+    background: radial-gradient(ellipse at center, #FD1B8A 0%, #6090FF 100%);;
+}
+h1.main-header{
+    font-family: sans-serif;
+}
+html {
+    height:100%;
+}
+.icon{
+    height: 80px;
+    width: 80px;
+    float: left;
+    padding: 4px;
+}
+#githublink {
+    transition: transform 1s ease;
+  }
+  
+  #githublink:hover {
+    transform: rotate(360deg);
+  }
