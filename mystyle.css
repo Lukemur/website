@@ -1,29 +1,88 @@
 p {
-    color: greenyellow;
+    color: rgb(0, 0, 0); /* changed all text color to black unless specified*/
 }
 body{
     min-height: 100%;
     background-color:background: #FD1B8A;
     background: -moz-radial-gradient(center, #FD1B8A 0%, #6090FF 100%);
     background: -webkit-radial-gradient(center, #FD1B8A 0%, #6090FF 100%);
-    background: radial-gradient(ellipse at center, #FD1B8A 0%, #6090FF 100%);;
+    background: radial-gradient(ellipse at center, #FD1B8A 0%, #6090FF 100%);; /*created gradient background*/
 }
 h1.main-header{
     font-family: sans-serif;
-}
+  /*changed main header font to salmon*/
+    color: salmon;
+    background-color: #a82b8d00;
+    text-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
+    }
 html {
-    height:100%;
+    height:100%; /*made height of HTML document 100% so gradient would travel all the way down*/
+    width: 100%;
 }
 .icon{
     height: 80px;
-    width: 80px;
-    float: left;
-    padding: 4px;
+    width: 80px; /*adjusted height and width of the icons, adujstments wer applied to the "class = id" class to make changes to all three simultaniously*/
+    padding: 6px;
 }
 #githublink {
-    transition: transform 1s ease;
+    transition: transform 1s ease; /*specifies that all transitions to occur on the github link will take 1s to complete*/
   }
   
   #githublink:hover {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* specifies that when hovered, the github link will rotate 360 degrees in the alloted time frame specified above */
   }
+h1{
+    font-size: 300%;
+    margin-left: 3%;
+    margin-right: auto; /* canged the font size of the main header, secified that the margins for the header would start 3% of the page horizontally an continue on one line only*/
+    width: 16em
+}
+.intro{
+    margin-left: 3%;
+    margin-right: 8%; /* took the "class = "intro"" classs and specified that the margins would begin at 3% of the page and end at 8%*/
+    width: 12em;
+}
+.projects{
+margin-left: 3%;
+margin-right: 8%; /* same applications for the prjoects class that were applied to the intro class*/
+width: 12em;
+}
+.projects dd{
+    width: 13em; /* specifies that all <dd> elements within the .projects class would have a width of 13 em, making the paragraph fat*/
+}
+#NM {
+    display: flex;
+   flex-direction: column; /*produces a flex table around the NM class, encompasing the introduction and projects class, puts these classes into a row*/
+   width: 17em;
+}
+.icon{
+    display: flex; /*specifies that the icon class will also be a flex container, because the NM class was specified as a row, the images will now appear next to the pervious two classes*/
+}
+#flexgroup{
+    display: flex;/* makes both flex groups into a flex group, alignining the content*/
+}
+.contactme h1{
+    font-size: 25px;
+    margin-left: 0em;
+    margin-bottom: 1em;
+}
+.contactme p{
+    font-size:12px ;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+.contactme{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    text-align: right;
+}
+.U {
+    color: blue;
+}
+.C {
+    color: yellow;
+}
+.S{
+    color: blue;
+}
