@@ -11,4 +11,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
-});
+}); // close task with CTRL + C to end server in order to make updates
+    // must re-run node.js to make any updates to server/web display
